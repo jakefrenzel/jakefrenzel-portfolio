@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --accent-color: #18e21b;
+    --hover-color: rgba(24, 226, 27, 0.8);
+}
+
+.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+    --accent-color: #18e21b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    transition: background-color 500ms ease-in-out;
+}
