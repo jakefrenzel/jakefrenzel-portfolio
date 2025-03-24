@@ -1,0 +1,30 @@
+---
+import Dropdown from "./Dropdown.astro";
+
+const { jobTitle } = Astro.props;
+const { company } = Astro.props;
+const { timeframe } = Astro.props;
+const { descriptOne } = Astro.props;
+const { descriptTwo } = Astro.props;
+const { descriptThree } = Astro.props;
+
+---
+<div>
+    <div class="content">
+        <h5 class="font-big bold">{company}</h5>
+        <div class="inline spaced">
+            <p class="font-regular accent">{jobTitle}</p>
+            <span class="font-regular dim">{timeframe}</span>
+        </div>
+    </div>
+    <Dropdown firstDesc={descriptOne} secondDesc={descriptTwo} thirdDesc={descriptThree}/>
+</div>
+<style>
+    h5 {
+        margin-top: var(--margin-xl);
+    }
+    .content {
+        border-left: 5px solid var(--accent-color);
+        padding-left: var(--margin-m);
+    }
+</style>

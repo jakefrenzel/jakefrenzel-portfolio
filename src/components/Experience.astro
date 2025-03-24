@@ -1,0 +1,52 @@
+---
+import Job from "./ui/Job.astro"
+---
+<section>
+    <h4 class="font-h4">Work Experience</h4>
+    <Job 
+        jobTitle="Front Desk Associate" 
+        company="The Picklr" 
+        timeframe="Nov. 2024 - Present" 
+        descriptOne="Greeted and checked in guests, ensuring a positive first impression and provided excellent customer service" 
+        descriptTwo="Managed medium call volume, efficiently handling inquiries, reservations, and guest requests" 
+        descriptThree="Checked in members and guests to The Picklr's reservation software and directed them to their courts"
+    />
+    <Job 
+        jobTitle="Amazon Fulfillment Associate" 
+        company="Amazon Warehouse" 
+        timeframe="May 2024 - checkbank" 
+        descriptOne="Analyzed returned orders for defects or damage and sorted items accordingly" 
+        descriptTwo="Packed orders with high attention to detail, ensuring accuracy in product selection and packaging" 
+        descriptThree="Restored product presentation, replacing packaging, labeling, and ensuring items were ready to be sent"
+    />
+    <Job 
+        jobTitle="Amazon Sortation Associate" 
+        company="Amazon Warehouse" 
+        timeframe="Dec. 2022 - Sept. 2023" 
+        descriptOne="Sorted, scanned, and labeled packages to ensure accurate routing for final delivery" 
+        descriptTwo="Operated a pallet jack to transport bulk shipments and organize inventory efficiently" 
+        descriptThree="Loaded and unloaded trucks, ensuring proper stacking and secure placement of packages"
+    />
+    <Job 
+        jobTitle="Court Monitor / Team Member" 
+        company="Skyzone" 
+        timeframe="Oct. 2020 - Mar. 2022" 
+        descriptOne="Supervised trampoline courts to ensure guest safety and enforced park rules" 
+        descriptTwo="Provided clear instructions on safe jumping techniques and assisted guests as needed" 
+        descriptThree="Operated the cash register, processed transactions, and handled cash and card payments"
+    />
+</section>
+<style>
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        background-color: var(--bg-color);
+        border: 1px solid var(--text-color);
+        border-radius: 1rem;
+        padding: var(--margin-m);
+        margin-top: var(--margin-xl);
+    }
+</style>
