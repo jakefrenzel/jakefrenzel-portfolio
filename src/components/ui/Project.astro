@@ -1,0 +1,28 @@
+---
+const { project } = Astro.props;
+const { desc } = Astro.props;
+---
+<div>
+    <h5 class="font-big bold timeline">{project}</h5>
+    <p class="font-regular dim">{desc}</p>
+    <slot />
+</div>
+<style>
+    div {
+        padding-left: var(--margin-l);
+    }
+    .timeline {
+        position: relative;
+    }
+    .timeline:before {
+        position: absolute;
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
+        z-index: 100;
+        left: calc((var(--margin-l) * -1) - 8px - 2.5px); /* (margin) - (half of the circle width) - (half of line width) */
+        top: 8px;
+    }
+</style>

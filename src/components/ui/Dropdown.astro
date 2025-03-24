@@ -1,0 +1,54 @@
+---
+const { firstDesc } = Astro.props;
+const { secondDesc } = Astro.props;
+const { thirdDesc } = Astro.props;
+---
+<a class="inline dropdown">
+    <p class="font-regular dim">Job Description</p>
+    <svg class="icon dim" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>    
+</a>
+<div class="sub-menu">
+    <ul>
+        <li class="font-regular">{firstDesc}</li>
+        <li class="font-regular">{secondDesc}</li>
+        <li class="font-regular">{thirdDesc}</li>
+    </ul>
+</div>
+<style>
+    a {
+        display: flex;
+        cursor: pointer;
+        margin-top: var(--margin-xs);
+        align-items: center;
+    }
+    svg {
+        fill: var(--text-color);
+        transition: transform 0.3s ease-in-out;
+        min-width: 24px;
+    }
+    .sub-menu {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: 300ms ease-in-out;
+    }
+    .sub-menu.show {
+        grid-template-rows: 1fr;
+    }
+    .sub-menu ul {
+        padding-left: var(--margin-xl);
+        overflow: hidden;
+    }
+    .sub-menu ul li {
+        margin-top: var(--margin-m);
+    }
+    .inline {
+        display: flex;
+        flex-direction: row;
+    }
+    .rotate {
+        transform: rotate(-180deg);
+    }
+</style>
+<script>
+    import "../../scripts/dropdown";
+</script>
