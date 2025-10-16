@@ -27,7 +27,7 @@
 }
 
 .dark-mode {
-    --bg-color: rgb(0, 0, 0);;
+    --bg-color: rgb(18, 18, 18);;
     --text-color: rgb(255, 255, 255);;
     --accent-color: #18CDF2;
 }
