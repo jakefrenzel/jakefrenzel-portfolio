@@ -1,8 +1,8 @@
 ---
-const { title, text, link } = Astro.props;
+const { title, text } = Astro.props;
 ---
 
-<a href={link} target="_blank" rel="noopener noreferrer" class="contact-card">
+<a class="contact-card">
     <div class="icon">
         <slot />
     </div>
@@ -17,7 +17,7 @@ const { title, text, link } = Astro.props;
         display: flex;
         color: var(--text-color);
         background-color: var(--bg-color);
-        border: 1px solid var(--text-color);
+        border: 1px solid transparent;
         border-radius: 1rem;
         height: 125px;
         width: 35%;
@@ -30,7 +30,7 @@ const { title, text, link } = Astro.props;
         display: flex;
         width: 45px;
         height: 45px;
-        background-color: var(--accent-color);
+        background-color: transparent;
         border-radius: 0.5rem;
         justify-content: center;
         align-items: center;
@@ -38,8 +38,7 @@ const { title, text, link } = Astro.props;
     .card-info {
         padding-left: var(--margin-l);
     }
-    span {
-        color: white;
-        letter-spacing: 2px;
+    p {
+        color: transparent;
     }
 </style>

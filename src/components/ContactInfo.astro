@@ -1,5 +1,6 @@
 ---
 import Card from "../components/ui/Card.astro"
+import FakeCard from "../components/ui/FakeCard.astro"
 
 const { header } = Astro.props;
 const { text } = Astro.props;
@@ -27,6 +28,8 @@ const { subtext } = Astro.props;
             <Card title="Email" text="Reach out via email!" link="mailto:jakef1@hotmail.com">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32"> <path fill="currentColor" d="M28.516 7.167H3.482L16 14.275l12.516-7.108zM16.74 17.303a1.494 1.494 0 0 1-1.48 0L2.5 10.06v14.773h27V10.06l-12.76 7.243z"/></svg>
             </Card>
+            <FakeCard title="Hello" text="You found a secret card!"></FakeCard>
+            <FakeCard title="Hello" text="Let me know if you found this!"></FakeCard>
         </div>
     </div>
 </section>
@@ -68,5 +71,6 @@ const { subtext } = Astro.props;
         display: flex;
         width: 100%;
         height: 100%;
+        gap: var(--margin-l);
     }
 </style>
