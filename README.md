@@ -1,14 +1,22 @@
-## Deployed on Vercel!
-
-[Check it out!](https://jakes-website-jakefrenzels-projects.vercel.app/)
+## 🚀 Welcome to Jake's Portfolio Website
+You can check out a live [preview here!](https://jakes-portfolio-website.vercel.app/)
 
 ```bash
-https://jakes-website-jakefrenzels-projects.vercel.app/
+https://jakes-portfolio-website.vercel.app/
 ```
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+## 💻 Why I Decided to Code It Myself
+I wanted to challenge myself to apply what I’ve learned in HTML, CSS, and JavaScript by building a website from scratch. I chose Astro as the framework to learn something new and explore modern web development practices. Its focus on speed and performance made it perfect for a fast, lightweight portfolio site. 
+
+Instead of using a template, I decided to design, code, and structure everything on my own to strengthen my frontend development skills while also learning new technologies.
+
+
+## ⚔️ How Does This Relate to Cybersecurity?
+Building this website helped me understand how web applications are structured, deployed, and optimized, which are all key areas in cybersecurity. Many modern cyber attacks target websites, so learning the technologies behind it gives me a stronger foundation for identifying vulnerabilities and implementing secure coding practices.
+
+## 📁 Project Structure
+Inside of the Astro project, you'll see the following folders and files:
 
 ```text
 /
@@ -21,22 +29,3 @@ Inside of your Astro project, you'll see the following folders and files:
 │       └── index.astro
 └── package.json
 ```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
