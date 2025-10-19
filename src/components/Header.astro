@@ -7,10 +7,10 @@
     <div class="grid-item">
         <nav>
             <ul class="nav-links">
-                <li><a class="font-big" href="./">About</a></li>
-                <li><a class="font-big" href="./projects">Projects</a></li>
-                <li><a class="font-big" href="./skills">Skills</a></li>
-                <li><a class="font-big" href="./contact">Contact Me</a></li>
+                <li><a class="font-big" href="/">About</a></li>
+                <li><a class="font-big" href="/projects">Projects</a></li>
+                <li><a class="font-big" href="/skills">Skills</a></li>
+                <li><a class="font-big" href="/contact">Contact Me</a></li>
             </ul>
         </nav>
     </div>
@@ -71,8 +71,12 @@
     .grid-item:last-child {
         margin-right: 30%;
     }
+    .nav-links a.active {
+        color: var(--accent-color);
+    }
 </style>
 <script is:inline>
+    // Theme Toggle Script
     const theme = (() => {
       const localStorageTheme = localStorage?.getItem("theme") ?? '';
       if (['dark', 'light'].includes(localStorageTheme)) {
@@ -101,4 +105,17 @@
     }
   
     document.getElementById("theme-toggle")?.addEventListener("click", handleToggleClick);
+
+    // Active Nav Link Script
+    const currentPath = window.location.pathname.replace(/\/$/, "");
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        const href = link.getAttribute("href").replace(/\/$/, "");
+
+        if (href === currentPath || (href === "" && currentPath === "")) {
+            link.classList.add("active");
+        }
+    });
+
   </script>

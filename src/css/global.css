@@ -93,3 +93,6 @@ body {
 .dim {
     opacity: 0.8;
 }
+.active {
+    color: var(--accent-color);
+}
