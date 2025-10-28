@@ -23,9 +23,31 @@ Inside of the Astro project, you'll see the following folders and files:
 ├── public/
 │   └── favicon.svg
 ├── src/
+│   ├── componenets/
+│   │   ├── UI/
+│   │   │   ├── Card.astro
+│   │   │   ├── Certification.astro
+│   │   │   ├── Dropdown.astro
+│   │   │   ├── FakeCard.astro
+│   │   │   ├── Job.astro
+│   │   │   └── Project.astro
+│   │   ├── About.astro
+│   │   ├── Certificates.astro
+│   │   ├── ContactInfo.astro
+│   │   ├── Education.astro
+│   │   ├── Experience.astro
+│   │   ├── Header.astro
+│   │   └── ProjectCollection.astro
+│   ├── css/
+│   │   └── global.css
 │   ├── layouts/
-│   │   └── Layout.astro
+│   │   └── BaseLayout.astro
 │   └── pages/
-│       └── index.astro
+│   │   ├── contact.astro
+│   │   ├── index.astro
+│   │   ├── projects.astro
+│   │   └── skills.astro
+│   └── scripts/
+│       └── dropdown.js
 └── package.json
 ```
