@@ -1,7 +1,11 @@
-## 🚀 Welcome to Jake's Portfolio Website
+# 🚀 Welcome to Jake's Portfolio Website
+
+I am creating a personal portfolio website where I showcase my projects, skills, and experience.  
+I built it from scratch using Astro to challenge myself, explore modern web development, and strengthen my frontend skills.
+
 You can check out a live [preview here!](https://jakes-portfolio-website.vercel.app/)
 
-```bash
+```link
 https://jakes-portfolio-website.vercel.app/
 ```
 
